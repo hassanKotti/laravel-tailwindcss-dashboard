@@ -2,11 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Country;
 use App\Models\Organization;
 use Illuminate\Http\Request;
 
 class OrganizationController extends Controller
 {
+    /**
+     * Instantiate a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +25,8 @@ class OrganizationController extends Controller
      */
     public function index()
     {
-        return view('Organizations.index');
+        $organizations = Organization::paginate(5);
+        return view('Organizations.index', compact('organizations'));
     }
 
     /**
@@ -24,7 +36,8 @@ class OrganizationController extends Controller
      */
     public function create()
     {
-        return view('Organizations.create');
+        $countries = Country::all();
+        return view('Organizations.create', compact('countries'));
     }
 
     /**
@@ -35,7 +48,21 @@ class OrganizationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $organization = new Organization();
+
+        $organization->name = $request->name;
+        $organization->phone = $request->phone;
+        $organization->email = $request->email;
+        $organization->address = $request->address;
+        $organization->city = $request->city;
+        $organization->state = $request->state;
+        $organization->country_id = $request->country_id;
+        $organization->postal_code = $request->postal_code;
+
+
+        $organization->save();
+
+        return redirect()->route('organizations')->with('success', 'Organization Saved Successfuly');
     }
 
     /**
@@ -46,7 +73,7 @@ class OrganizationController extends Controller
      */
     public function show(Organization $organization)
     {
-        //
+        return view('Organizations.index', compact('organization'));
     }
 
     /**
@@ -57,7 +84,8 @@ class OrganizationController extends Controller
      */
     public function edit(Organization $organization)
     {
-        //
+        $countries = Country::all();
+        return view('Organizations.edit', compact('organization', 'countries'));
     }
 
     /**
@@ -69,7 +97,20 @@ class OrganizationController extends Controller
      */
     public function update(Request $request, Organization $organization)
     {
-        //
+
+        $organization->name = $request->name;
+        $organization->phone = $request->phone;
+        $organization->email = $request->email;
+        $organization->address = $request->address;
+        $organization->city = $request->city;
+        $organization->state = $request->state;
+        $organization->country_id = $request->country_id;
+        $organization->postal_code = $request->postal_code;
+
+
+        $organization->update();
+
+        return redirect()->route('organizations')->with('success', 'Organization Saved Successfuly');
     }
 
     /**
@@ -80,6 +121,7 @@ class OrganizationController extends Controller
      */
     public function destroy(Organization $organization)
     {
-        //
+        $organization->delete();
+        return redirect()->route('organizations')->with('success', 'Deleted Successfully');
     }
 }

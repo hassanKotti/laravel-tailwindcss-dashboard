@@ -15,14 +15,14 @@ class CreateOrganizationsTable extends Migration
     {
         Schema::create('organizations', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->bigIncrements('id');
+            $table->increments('id')->unsigned();
             $table->string('name');
             $table->string('email');
             $table->string('phone',10);
             $table->string('address');
             $table->string('city');
             $table->string('state');
-            $table->unsignedBigInteger('country_id');
+            $table->unsignedInteger('country_id');
             $table->string('postal_code',6);
             $table->timestamps();
 

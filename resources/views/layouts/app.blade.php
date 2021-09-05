@@ -13,23 +13,24 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
+    @livewireStyles
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/detect-moded.js') }}" defer></script>
 </head>
 
-<body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100 flex overflow-hidden">
-        <div class="w-64 h-screen">
+<body class="font-sans antialiased overflow-y-hidden">
+    <div class="min-h-screen bg-gray-100 dark:bg-dark-500 dark:text-gray-400 flex ">
+        <div class="max-h-screen">
             <!-- Page Sidebar -->
             @include('layouts.sidebar')
         </div>
-        <div scroll-region class="w-full">
+        <div class="w-full">
             <!-- Page Header -->
             @include('layouts.navigation')
 
             <!-- Page Content -->
-            <main class="overflow-y-scroll">
+            <main class="overscroll-auto overflow-y-scroll h-4/5">
                 {{ $slot }}
             </main>
 
@@ -37,6 +38,8 @@
             @include('layouts.footer')
         </div>
     </div>
+    @livewireScripts
+
 </body>
 
 </html>

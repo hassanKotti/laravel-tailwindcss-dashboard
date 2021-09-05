@@ -3800,6 +3800,8 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./detect-mode */ "./resources/js/detect-mode.js");
+
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
 /***/ }),
@@ -3832,6 +3834,32 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/detect-mode.js":
+/*!*************************************!*\
+  !*** ./resources/js/detect-mode.js ***!
+  \*************************************/
+/***/ (() => {
+
+// detect-mode.js
+// set initial color scheme
+var explicitelyPreferScheme = false;
+
+if (window.localStorage) {
+  if (localStorage.getItem('colorMode') === 'dark') {
+    document.documentElement.classList.add('dark');
+    explicitelyPreferScheme = 'dark';
+  } else if (localStorage.getItem('colorMode') === 'light') {
+    document.documentElement.classList.remove('dark');
+    explicitelyPreferScheme = 'light';
+  }
+}
+
+if (explicitelyPreferScheme !== 'light' && window.matchMedia('(prefers-color-scheme:dark)').matches) {
+  document.documentElement.classList.add('dark');
+}
 
 /***/ }),
 

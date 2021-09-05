@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OrganizationController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,15 +22,15 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/contacts', function () {
-    return view('contacts');
-})->middleware(['auth'])->name('contacts');
 
-
+Route::resource('/contacts', ContactController::class)->name('index', 'contacts');
 Route::resource('/organizations', OrganizationController::class)->name('index', 'organizations');
 
 Route::get('/reports', function () {
-    return view('reports');
+    return view('reports.index');
 })->middleware(['auth'])->name('reports');
+Route::get('/resources', function () {
+    return view('resources.index');
+})->middleware(['auth'])->name('resources');
 
 require __DIR__ . '/auth.php';

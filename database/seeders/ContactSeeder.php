@@ -16,10 +16,19 @@ class ContactSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => Str::random(10),
-            'email' => Str::random(10).'@gmail.com',
-            'password' => Hash::make('password'),
-        ]);
+        for ($i = 0; $i < 10; $i++) {
+            DB::table('contacts')->insert([
+                'first_name' => Str::random(10),
+                'last_name' => Str::random(10),
+                'email' => Str::random(10) . '@gmail.com',
+                'phone' => '0969609952',
+                'address' => 'karama center,bur dubai,dubai ,uae',
+                'city' => 'bur dubai',
+                'state' => 'dubai',
+                'organization_id' => 1,
+                'country_id' => 1,
+                'postal_code' => '123456'
+            ]);
+        }
     }
 }
