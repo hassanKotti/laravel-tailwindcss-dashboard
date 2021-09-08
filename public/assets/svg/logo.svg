@@ -1,5 +1,9 @@
-<svg  viewBox=" 0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg" stroke="1">
-    <path
-        d="M12 21.135L3 14.135L4.62 12.875L11.99 18.605L19.37 12.865L21 14.135L12 21.135ZM12 16.865L4.63 11.135L3 9.86499L12 2.86499L21 9.86499L19.36 11.135L12 16.865Z"
-        fill="#000"></path>
+<svg width="500" height="200" xmlns="http://www.w3.org/2000/svg" stroke="1" fill="#000">
+
+ <g>
+  <title>Layer 1</title>
+  <rect transform="matrix(2.50874 0 0 2.50874 -1196.66 -226.541)" stroke="#000" id="svg_3" height="198.0375" width="499.09447" y="1.48136" x="0.95287" stroke-width="0" fill="none"/>
+  <path stroke="null" id="svg_1" fill="#8b5cf6" d="m80.51295,163.64703l-58.50937,-45.50729l10.53169,-8.19131l47.91268,37.25097l47.97769,-37.31598l10.5967,8.25632l-58.50937,45.50729zm0,-27.75945l-47.91268,-37.25097l-10.5967,-8.25639l58.50937,-45.50729l58.50937,45.50729l-10.66171,8.25639l-47.84766,37.25097z"/>
+  <text transform="matrix(2.50874 0 0 2.50874 -1195.66 -227.541)" font-style="normal" font-weight="normal" stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Nunito SemiBold'" font-size="24" id="svg_2" y="139.48143" x="538.20341" stroke-width="0" fill="#8b5cf6">LARAWIND</text>
+ </g>
 </svg>
