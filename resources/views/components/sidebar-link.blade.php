@@ -1,13 +1,14 @@
-@props(['active'])
+@props(['active', 'href' => 'dashboard'])
 
 @php
-$classes = ($active ?? false)
-            ? 'block pl-3 pr-4 py-2 border-l-4 border-indigo-400 text-base font-medium text-indigo-700 bg-indigo-900 focus:outline-none focus:text-indigo-800 focus:bg-indigo-600 focus:border-indigo-700 transition duration-150 ease-in-out'
-            : 'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-indigo-600 hover:text-indigo-800 hover:bg-indigo-900 hover:border-indigo-300 focus:outline-none focus:text-indigo-800 focus:bg-indigo-400 focus:border-indigo-300 transition duration-150 ease-in-out';
+$classes = $active ? 'block' : 'hidden';
+$bgClasses = $active ? 'bg-purple-50 dark:bg-dark-600 text-dark-400' : '';
 @endphp
 
-<div class="mb-4">
-    <a  {{ $attributes->merge(['class' => $classes]) }} >
-         {{ $slot }}
-    </a>
+<div
+    class="relative {{ $bgClasses }} px-6 py-4 inline-flex items-center w-full text-sm font-semibold text-dark-800 transition-colors duration-150
+             hover:text-dark-500 dark:hover:text-dark-800 dark:text-dark-100 hover:bg-purple-50 dark:hover:bg-dark-500">
+    <span class="absolute {{ $classes }}  inset-y-0 left-0 w-1 bg-purple-600 " aria-hidden="true"></span>
+    {{ $slot }}
+
 </div>

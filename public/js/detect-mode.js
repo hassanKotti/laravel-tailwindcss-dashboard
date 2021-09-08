@@ -6,9 +6,11 @@ if (window.localStorage) {
     if (localStorage.getItem('colorMode') === 'dark') {
         document.documentElement.classList.add('dark')
         explicitelyPreferScheme = 'dark'
+        console.log('dark added')
     } else if (localStorage.getItem('colorMode') === 'light') {
         document.documentElement.classList.remove('dark')
         explicitelyPreferScheme = 'light'
+        console.log('dark removed')
     }
 }
 

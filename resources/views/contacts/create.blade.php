@@ -2,18 +2,24 @@
     <div scroll-region="" class="px-4 py-8 md:flex-1 md:p-12 md:overflow-y-auto">
         <div>
             <h1 class="mb-8 text-3xl font-bold">
-                <a href="{{ route('organizations') }}" class="text-purple-400 hover:text-purple-600">Organizations</a>
+                <a href="{{ route('contacts') }}" class="text-purple-400 hover:text-purple-600">Contacts</a>
                 <span class="font-medium text-purple-400">/</span> Create
             </h1>
             <div class="max-w-full overflow-hidden bg-white rounded-md shadow dark:bg-dark-800">
-                <form action="{{ route('organizations.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('contacts.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="flex flex-wrap p-8 -mb-8 -mr-6">
                         <div class="w-full pb-8 pr-6 lg:w-1/2">
-                            <x-label for="name" :value="__('Name')" />
+                            <x-label for="first_name" :value="__('First Name')" />
 
-                            <x-input id="name" class="block w-full mt-1" type="text" name="name" required
-                                autocomplete="current-name" />
+                            <x-input id="first_name" class="block w-full mt-1" type="text" name="first_name" required
+                                autocomplete="current-first-name" />
+                        </div>
+                        <div class="w-full pb-8 pr-6 lg:w-1/2">
+                            <x-label for="lastname" :value="__('Last Name')" />
+
+                            <x-input id="last_name" class="block w-full mt-1" type="text" name="last_name" required
+                                autocomplete="current-last-name" />
                         </div>
                         <div class="w-full pb-8 pr-6 lg:w-1/2">
                             <x-label for="email" :value="__('Email')" />
@@ -48,9 +54,20 @@
                                 autocomplete="current-state" />
                         </div>
                         <div class="w-full pb-8 pr-6 lg:w-1/2">
+                            <x-label for="organization" :value="__('Organization')" />
+                            <select id="organization_id" name="organization_id"
+                                class="block w-full mt-1 rounded-md shadow-sm appearance-none dark:bg-dark-600 dark:border-dark-500border-dark-300 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50'">
+                                <option value=""></option>
+                                @foreach ($organizations as $organization)
+                                    <option value="{{ $organization->id }}">{{ $organization->name }}</option>
+                                @endforeach
+                            </select>
+
+                        </div>
+                        <div class="w-full pb-8 pr-6 lg:w-1/2">
                             <x-label for="country" :value="__('Country')" />
                             <select id="country_id" name="country_id"
-                                class="block w-full mt-1 rounded-md shadow-sm dark:bg-dark-600 dark:border-dark-500appearance-none border-dark-300 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50'">
+                                class="block w-full mt-1 rounded-md shadow-sm appearance-none dark:bg-dark-600 dark:border-dark-500border-dark-300 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50'">
                                 <option value=""></option>
                                 @foreach ($countries as $country)
                                     <option value="{{ $country->id }}">{{ $country->name }}</option>
@@ -69,7 +86,7 @@
                         <button
                             class="flex items-center px-3 py-2 text-purple-500 bg-purple-200 rounded-md hover:bg-purple-100"
                             type="submit">
-                            Create Organization
+                            Create Contact
                         </button>
                     </div>
                 </form>

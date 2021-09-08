@@ -1,8 +1,17 @@
-<x-guest-layout>
+<x-guest-layout class="max-h-screen">
     <x-auth-card>
+        <div class="absolute top-0 right-0 bg-dark-100 dark:bg-dark-900">
+            <div class="flex items-center justify-between">
+                @if (Route::has('register'))
+                    <a href="{{ route('register') }}" class="ml-4 text-sm underline text-dark-400">Register</a>
+                @endif
+                <x-theme-toggle />
+            </div>
+        </div>
         <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+            <a href="/" class="flex items-center justify-between space-x-4">
+                <x-application-logo class="w-20 h-20 fill-current lg:w-12 lg:h-12 text-dark-400 dark:text-dark-400" />
+                <span class="hidden font-semibold uppercase lg:inline-flex text-md">LaraWIND</span>
             </a>
         </x-slot>
 
@@ -17,17 +26,17 @@
 
             <!-- Email Address -->
             <div>
-                <x-label for="email" :value="__('Email')" />
+                <x-label for="email" :value="__('Email')" class="text-dark-400" />
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required
+                <x-input id="email" class="block w-full mt-1" type="email" name="email" :value="old('email')" required
                     autofocus />
             </div>
 
             <!-- Password -->
             <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
+                <x-label for="password" :value="__('Password')" class="text-dark-400" />
 
-                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required
+                <x-input id="password" class="block w-full mt-1" type="password" name="password" required
                     autocomplete="current-password" />
             </div>
 
@@ -35,27 +44,28 @@
             <div class="block mt-4">
                 <label for="remember_me" class="inline-flex items-center">
                     <input id="remember_me" type="checkbox"
-                        class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        class="text-purple-600 rounded shadow-sm dark:bg-dark-500 border-dark-300 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50"
                         name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                    <span class="ml-2 text-sm text-dark-400">{{ __('Remember me') }}</span>
                 </label>
             </div>
 
-            <div class="flex items-center justify-between mt-4">
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                @endif
+            <div class="flex items-center justify-end mt-4 space-x-4">
+
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900"
+                    <a class="text-sm underline text-dark-400 hover:text-dark-900"
                         href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
 
-                <x-button class="ml-3">
+                <x-button>
                     {{ __('Log in') }}
                 </x-button>
             </div>
         </form>
+        <x-slot name="footer">
+            @include('layouts.footer')
+        </x-slot>
     </x-auth-card>
 </x-guest-layout>
