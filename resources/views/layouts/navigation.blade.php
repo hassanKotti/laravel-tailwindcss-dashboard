@@ -1,13 +1,13 @@
 <nav x-data="{ open: false }"
-    class="relative bg-white border-b shadow lg:bg-white dark:bg-dark-900 border-dark-100 dark:border-dark-600">
+    class="relative bg-white border-b border-gray-100 shadow lg:bg-white dark:bg-gray-900 dark:border-gray-600">
     <!-- Primary Navigation Menu -->
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex flex-1">
                 <div class="flex items-center flex-shrink-0 py-4 lg:hidden ">
-                    <a href="{{ route('dashboard') }}" class="flex items-center justify-between ">
-                        <x-application-logo class="block w-auto h-8 fill-current dark:text-dark-200 text-dark-400" />
-                        <span class="ml-2 text-lg font-bold uppercase dark:text-dark-200 text-dark-400">LaraWind</span>
+                    <a href="{{ url('/') }}" class="flex items-center justify-between ">
+                        <x-application-logo class="block w-auto h-8 text-gray-400 fill-current dark:text-gray-200" />
+                        <span class="ml-2 text-lg font-bold text-gray-400 uppercase dark:text-gray-200">LaraWind</span>
                     </a>
                 </div>
 
@@ -22,7 +22,7 @@
                             </svg>
                         </div>
                         <input
-                            class="w-full pl-8 pr-2 text-sm border-0 rounded-md text-dark-400 placeholder-dark-500 bg-dark-100 dark:placeholder-dark-300 dark:focus:shadow-outline-dark dark:focus:placeholder-dark-600 dark:bg-dark-700 dark:text-dark-400 focus:placeholder-dark-400 focus:bg-white focus:border-purple-500 focus:outline-none focus:shadow-outline-purple "
+                            class="w-full pl-8 pr-2 text-sm text-gray-400 placeholder-gray-500 bg-gray-100 border-0 rounded-md dark:placeholder-gray-300 dark:focus:shadow-outline-dark dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-400 focus:placeholder-gray-400 focus:bg-white focus:border-purple-500 focus:outline-none focus:shadow-outline-purple "
                             type="text" placeholder="Search for projects" aria-label="Search">
                     </div>
                 </div>
@@ -30,11 +30,13 @@
 
             <!-- Settings Dropdown -->
             <div class="hidden lg:flex sm:items-center sm:ml-6">
-                <x-theme-toggle />
+                <div class="m-3">
+                    <x-theme-toggle />
+                </div>
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button
-                            class="flex items-center text-sm font-medium transition duration-150 ease-in-out text-dark-400 hover:text-dark-400 hover:border-dark-300 focus:outline-none focus:text-dark-400 focus:border-dark-300">
+                            class="flex items-center text-sm font-medium text-gray-400 transition duration-150 ease-in-out hover:text-gray-400 hover:border-gray-300 focus:outline-none focus:text-gray-400 focus:border-gray-300">
                             <div>{{ Auth::user()->name }}</div>
 
                             <div class="ml-1">
@@ -48,7 +50,7 @@
                         </button>
                     </x-slot>
 
-                    <x-slot name="content" class="dark:bg-dark-700 dark:border-dark-800">
+                    <x-slot name="content" class="dark:bg-gray-700 dark:border-gray-800">
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
@@ -67,12 +69,12 @@
                 <x-theme-toggle />
 
                 <button @click="open = ! open"
-                    class="inline-flex items-center justify-center p-2 transition duration-150 ease-in-out rounded-md text-dark-400 dark:text-dark-200 hover:text-dark-500 hover:bg-dark-100 dark:hover:bg-dark-600 focus:outline-none focus:ring-dark-700 focus:text-dark-500">
+                    class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md dark:text-gray-200 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-gray-700 focus:text-gray-500">
                     <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
-                        <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden text-dark-400"
+                        <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden text-gray-400"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
@@ -81,7 +83,7 @@
     </div>
 
     <!-- Responsive Navigation Menu -->
-    <div :class="{'block': open, 'hidden': ! open}" class="hidden bg-white lg:hidden dark:bg-dark-700">
+    <div :class="{'block': open, 'hidden': ! open}" class="hidden bg-white lg:hidden dark:bg-gray-700">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
@@ -101,10 +103,10 @@
         </div>
 
         <!-- Responsive Settings Options -->
-        <div class="pt-4 pb-1 border-t border-dark-200 dark:bg-dark-700 dark:border-dark-800">
+        <div class="pt-4 pb-1 border-t border-gray-200 dark:bg-gray-700 dark:border-gray-800">
             <div class="px-4">
-                <div class="text-base font-medium text-dark-400">{{ Auth::user()->name }}</div>
-                <div class="text-sm font-medium text-dark-400">{{ Auth::user()->email }}</div>
+                <div class="text-base font-medium text-gray-400">{{ Auth::user()->name }}</div>
+                <div class="text-sm font-medium text-gray-400">{{ Auth::user()->email }}</div>
             </div>
 
             <div class="mt-3 space-y-1">
@@ -127,7 +129,7 @@
                     </svg>
                 </div>
                 <input
-                    class="w-full pl-8 pr-2 text-sm border-0 rounded-md text-dark-400 placeholder-dark-600 bg-dark-100 dark:placeholder-dark-500 dark:focus:shadow-outline-dark dark:focus:placeholder-dark-600 dark:bg-dark-700 dark:text-dark-200 focus:placeholder-dark-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
+                    class="w-full pl-8 pr-2 text-sm text-gray-400 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-dark dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
                     type="text" placeholder="Search for projects" aria-label="Search">
             </div>
         </div>

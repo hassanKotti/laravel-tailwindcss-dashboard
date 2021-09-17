@@ -5,7 +5,7 @@
                 <a href="{{ route('organizations') }}" class="text-purple-400 hover:text-purple-600">Organizations</a>
                 <span class="font-medium text-purple-400">/</span> Create
             </h1>
-            <div class="max-w-full overflow-hidden bg-white rounded-md shadow dark:bg-dark-800">
+            <div class="max-w-full overflow-hidden bg-white rounded-md shadow dark:bg-gray-800">
                 <form action="{{ route('organizations.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="flex flex-wrap p-8 -mb-8 -mr-6">
@@ -50,7 +50,7 @@
                         <div class="w-full pb-8 pr-6 lg:w-1/2">
                             <x-label for="country" :value="__('Country')" />
                             <select id="country_id" name="country_id"
-                                class="block w-full mt-1 rounded-md shadow-sm dark:bg-dark-600 dark:border-dark-500appearance-none border-dark-300 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50'">
+                                class="block w-full mt-1 border-gray-300 rounded-md shadow-sm dark:bg-gray-600 dark:border-gray-500appearance-none focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50'">
                                 <option value=""></option>
                                 @foreach ($countries as $country)
                                     <option value="{{ $country->id }}">{{ $country->name }}</option>
@@ -65,7 +65,7 @@
                                 autocomplete="current-postal_code" />
                         </div>
                     </div>
-                    <div class="flex items-center justify-end px-8 py-4 border-t bg-dark-50 border-dark-100">
+                    <div class="flex items-center justify-end px-8 py-4 border-t border-gray-100 bg-gray-50">
                         <button
                             class="flex items-center px-3 py-2 text-purple-500 bg-purple-200 rounded-md hover:bg-purple-100"
                             type="submit">

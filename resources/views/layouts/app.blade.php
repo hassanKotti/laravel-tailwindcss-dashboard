@@ -5,8 +5,10 @@
     <x-head />
 </head>
 
-<body class="overflow-y-hidden font-sans antialiased">
-    <div class="flex min-h-screen bg-dark-50 dark:bg-dark-900 dark:text-dark-400 ">
+<body
+    class="overflow-y-hidden font-sans antialiased text-gray-700 bg-white aleading-normal dark:bg-gray-900 dark:text-gray-300 bg-opacity-60">
+
+    <div class="flex min-h-screen bg-gray-50 dark:bg-gray-900 dark:text-gray-400 ">
         <div class="max-h-screen">
             <!-- Page Sidebar -->
             @include('layouts.sidebar')

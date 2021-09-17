@@ -1,11 +1,11 @@
-<div class="absolute inset-0 flex items-center justify-center bg-opacity-25 bg-dark-900" x-show="open">
+<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-25" x-show="open">
     <div
-        class="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl dark:bg-dark-700 rounded-2xl ">
-        <h3 class="text-lg font-medium leading-6 text-dark-900 dark:text-dark-300" id="headlessui-dialog-title-6">Delete
+        class="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl dark:bg-gray-700 rounded-2xl ">
+        <h3 class="text-lg font-medium leading-6 text-gray-900 dark:text-gray-300" id="headlessui-dialog-title-6">Delete
             Organization
         </h3>
         <div class="mt-2">
-            <p class="text-sm text-dark-500 dark:text-dark-400">Your payment has been successfully submitted. We’ve sent
+            <p class="text-sm text-gray-500 dark:text-gray-400">Your payment has been successfully submitted. We’ve sent
                 your an email
                 with
                 all

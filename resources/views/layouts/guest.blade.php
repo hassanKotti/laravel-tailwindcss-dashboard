@@ -6,7 +6,8 @@
 </head>
 
 <body>
-    <div class="font-sans antialiased text-dark-900 dark:text-dark-300 dark:bg-dark-900">
+    <body class="antialiased leading-normal text-gray-700 bg-white dark:bg-gray-900 dark:text-gray-300 bg-opacity-60">
+
         {{ $slot }}
     </div>
 </body>

@@ -4,15 +4,15 @@
             <h1 class="mb-8 text-3xl font-bold">Organizations</h1>
             <div class="flex items-center justify-between mb-6 capitalize">
                 <div class="flex items-center w-full max-w-md mr-4 capitalize">
-                    <div class="flex items-center w-full bg-white rounded shadow dark:bg-dark-700">
+                    <div class="flex items-center w-full bg-white rounded shadow dark:bg-gray-700">
                         <x-dropdown align="left" width="48">
                             <x-slot name="trigger"
-                                class="px-4 border-r rounded-l md:px-6 dark:border-dark-400 hover:bg-dark-100 dark:hover:bg-dark-500 focus:border-white focus:ring focus:z-10">
+                                class="px-4 border-r rounded-l md:px-6 dark:border-gray-400 hover:bg-gray-100 dark:hover:bg-gray-500 focus:border-white focus:ring focus:z-10">
                                 <button type="button" class="px-4 md:px-6">
                                     <div class="flex items-baseline">
-                                        <span class="hidden text-dark-700 dark:text-dark-400 md:inline">Filter</span>
+                                        <span class="hidden text-gray-700 dark:text-gray-400 md:inline">Filter</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961.243 599.998"
-                                            class="w-2 h-2 text-dark-700 md:ml-2 dark:text-dark-400" fill="currentColor">
+                                            class="w-2 h-2 text-gray-700 md:ml-2 dark:text-gray-400" fill="currentColor">
                                             <path
                                                 d="M239.998 239.999L0 0h961.243L721.246 240c-131.999 132-240.28 240-240.624 239.999-.345-.001-108.625-108.001-240.624-240z">
                                             </path>
@@ -21,12 +21,12 @@
                                 </button>
                             </x-slot>
                             <x-slot name="content"
-                                class="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y rounded-md shadow-lg dark:bg-dark-700 dark:divide-dark-400 divide-dark-100 ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                class="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg dark:bg-gray-700 dark:divide-gray-400 ring-1 ring-black ring-opacity-5 focus:outline-none"
                                 aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-10" role="menu"
                                 tabindex="0">
                                 <div class="px-1 py-1 " role="none">
                                     <button
-                                        class="flex items-center w-full px-2 py-2 text-sm rounded-md text-dark-900 dark:text-dark-400 group"
+                                        class="flex items-center w-full px-2 py-2 text-sm text-gray-900 rounded-md dark:text-gray-400 group"
                                         id="headlessui-menu-item-11" role="menuitem" tabindex="-1"><svg
                                             class="w-5 h-5 mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@
                                                 stroke-width="2">
                                             </path>
                                         </svg>Edit</button><button
-                                        class="flex items-center w-full px-2 py-2 text-sm rounded-md text-dark-900 dark:text-dark-400 group"
+                                        class="flex items-center w-full px-2 py-2 text-sm text-gray-900 rounded-md dark:text-gray-400 group"
                                         id="headlessui-menu-item-12" role="menuitem" tabindex="-1"><svg
                                             class="w-5 h-5 mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="px-1 py-1" role="none">
                                     <button
-                                        class="flex items-center w-full px-2 py-2 text-sm rounded-md text-dark-900 dark:text-dark-400 group"
+                                        class="flex items-center w-full px-2 py-2 text-sm text-gray-900 rounded-md dark:text-gray-400 group"
                                         id="headlessui-menu-item-13" role="menuitem" tabindex="-1"><svg
                                             class="w-5 h-5 mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@
                                                 stroke-width="2"></rect>
                                             <path d="M8 12H12" stroke="#A78BFA" stroke-width="2"></path>
                                         </svg>Archive</button><button
-                                        class="flex items-center w-full px-2 py-2 text-sm rounded-md text-dark-900 dark:text-dark-400 group"
+                                        class="flex items-center w-full px-2 py-2 text-sm text-gray-900 rounded-md dark:text-gray-400 group"
                                         id="headlessui-menu-item-14" role="menuitem" tabindex="-1"><svg
                                             class="w-5 h-5 mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@
                                     </button>
                                 </div>
                                 <div class="px-1 py-1" role="none"><button
-                                        class="flex items-center w-full px-2 py-2 text-sm rounded-md text-dark-900 dark:text-dark-400 group"
+                                        class="flex items-center w-full px-2 py-2 text-sm text-gray-900 rounded-md dark:text-gray-400 group"
                                         id="headlessui-menu-item-15" role="menuitem" tabindex="-1"><svg
                                             class="w-5 h-5 mr-2 text-violet-400" aria-hidden="true" viewBox="0 0 20 20"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,17 +81,17 @@
                             </x-slot>
                         </x-dropdown>
                         <input autocomplete="off" type="text" name="search" placeholder="Search…"
-                            class="relative w-full px-6 py-3 rounded-r focus:ring dark:bg-dark-800">
+                            class="relative w-full px-6 py-3 rounded-r focus:ring dark:bg-gray-800">
                     </div>
                     <button type="button"
-                        class="ml-3 text-sm text-dark-500 hover:text-dark-700 focus:text-purple-500">Reset</button>
+                        class="ml-3 text-sm text-gray-500 hover:text-gray-700 focus:text-purple-500">Reset</button>
                 </div>
                 <x-link-button href="{{ route('organizations.create') }}"
                     class="">
                     Create Organization
                 </x-link-button>
             </div>
-            <div class="overflow-x-auto bg-white rounded-md shadow dark:bg-dark-800">
+            <div class="overflow-x-auto bg-white rounded-md shadow dark:bg-gray-800">
                     <table class="w-full whitespace-nowrap">
                         <tr class="font-bold text-left">
                             <th class="px-6 pt-6 pb-4">Name</th>
@@ -100,27 +100,27 @@
                         </tr>
                         @forelse ($organizations as $organization)
                             <tr
-                                class="hover:bg-dark-100 dark:hover:bg-dark-600 dark:border-dark-700 focus-within:bg-dark-100">
-                                <td class="border-t dark:border-dark-700"><a
+                                class="hover:bg-gray-100 dark:hover:bg-gray-600 dark:border-gray-700 focus-within:bg-gray-100">
+                                <td class="border-t dark:border-gray-700"><a
                                         href="{{ route('organizations.edit', $organization) }}"
                                         class="flex items-center px-6 py-4 capitalize focus:text-purple-500">
                                         {{ $organization->name }}
                                     </a></td>
-                                <td class="border-t dark:border-dark-700"><a tabindex="-1"
+                                <td class="border-t dark:border-gray-700"><a tabindex="-1"
                                         href="{{ route('organizations.edit', $organization) }}"
                                         class="flex items-center px-6 py-4 capitalize">
                                         {{ $organization->name }}
                                     </a></td>
-                                <td class="border-t dark:border-dark-700"><a tabindex="-1"
+                                <td class="border-t dark:border-gray-700"><a tabindex="-1"
                                         href="{{ route('organizations.edit', $organization) }}"
                                         class="flex items-center px-6 py-4 capitalize">
                                         {{ $organization->phone }}
                                     </a></td>
-                                <td class="w-px border-t dark:border-dark-700"><a tabindex="-1"
+                                <td class="w-px border-t dark:border-gray-700"><a tabindex="-1"
                                         href="{{ route('organizations.edit', $organization) }}"
                                         class="flex items-center px-4 capitalize"><svg
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                            class="block w-6 h-6 text-dark-400">
+                                            class="block w-6 h-6 text-gray-400">
                                             <polygon fill="currentColor"
                                                 points="12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707">
                                             </polygon>
@@ -129,7 +129,7 @@
                                 </td>
                             </tr>
                         @empty
-                            <tr class="bg-dark-200 focus-within:bg-dark-100" disabled>
+                            <tr class="bg-gray-200 focus-within:bg-gray-100" disabled>
                                 <td class="border-t" colspan="3">
                                     <p
                                         class="flex items-center justify-center px-6 py-4 capitalize focus:text-purple-500">

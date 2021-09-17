@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <h1 class="p-6 mt-4 mb-4 text-3xl font-extrabold md:p-0 text-dark-900 dark:text-gray-400">Resources</h1>
+        <h1 class="p-6 mt-4 mb-4 text-3xl font-extrabold text-gray-900 md:p-0 dark:text-gray-400">Resources</h1>
         <div class="max-w-3xl">
             <div class="p-6 mb-5 space-y-5 text-lg leading-5 md:p-0">
                 <p>We think Tailwind is an amazing CSS framework, but you need more than just a CSS framework to produce
@@ -9,9 +9,9 @@
             </div>
 
         </div>
-        <div class="grid gap-8 pb-10 mt-8 border-b sm:grid-cols-3 sm:gap-6 xl:gap-8 dark:border-dark-600">
+        <div class="grid gap-8 pb-10 mt-8 border-b sm:grid-cols-3 sm:gap-6 xl:gap-8 dark:border-gray-600">
             <div>
-                <h2 class="mb-4 text-xl font-bold text-dark-900 dark:text-dark-300">PHP freamwork
+                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-gray-300">PHP freamwork
                     <span class="sr-only">:Laravel</span>
                 </h2><a href="https://www.laravel.com/"
                     class="relative flex h-40 mb-6 bg-white shadow-sm xl:h-48 md:rounded-3xl">
@@ -34,7 +34,7 @@
             </div>
 
             <div>
-                <h2 class="mb-4 text-xl font-bold text-dark-900 dark:text-dark-300">CSS<span class="sr-only">:
+                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-gray-300">CSS<span class="sr-only">:
                         Tailwind CSS</span>
                 </h2>
                 <div class="items-center justify-between space-x-4 md:flex lg:flex-col">
@@ -65,7 +65,7 @@
             </div>
 
             <div>
-                <h2 class="mb-4 text-xl font-bold text-dark-900 dark:text-gray-400">JavaScript<span
+                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-gray-400">JavaScript<span
                         class="sr-only">: Alphine
                         Js</span>
                 </h2><a href="https://alphinejs.dev/"
@@ -83,7 +83,7 @@
                 </p>
             </div>
             <div>
-                <h2 class="mb-4 text-xl font-bold text-dark-900 dark:text-gray-400">Icons<span class="sr-only">:
+                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-gray-400">Icons<span class="sr-only">:
                         Heroicons</span>
                 </h2><a href="https://heroicons.com/"
                     class="relative flex h-40 mb-6 xl:h-48 md:rounded-3xl bg-gradient-to-br from-purple-800 to-purple-500">
@@ -109,7 +109,7 @@
                     projects.</p>
             </div>
             <div>
-                <h2 class="mb-4 text-xl font-bold text-dark-900 dark:text-gray-400">
+                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-gray-400">
                     <br />
                     <span class="sr-only">Cool Icons</span>
                 </h2><a href="https://www.coolicons.cool/" class="relative flex h-40 mb-6 xl:h-48 md:rounded-3xl">
@@ -119,7 +119,7 @@
                             <div class="relative flex items-center justify-center">
                                 <span class="sr-only">Cool Icons</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 18"
-                                    class="w-auto h-6 text-dark-200">
+                                    class="w-auto h-6 text-gray-200">
                                     <path
                                         d="M41.017 14.18c-.981 0-1.847-.213-2.596-.64a4.723 4.723 0 01-1.782-1.781c-.426-.762-.639-1.634-.639-2.616 0-.981.213-1.853.64-2.615a4.723 4.723 0 011.781-1.782c.75-.426 1.615-.64 2.596-.64 1.227 0 2.26.324 3.1.97.84.632 1.375 1.51 1.608 2.634h-2.616a1.856 1.856 0 00-.775-1.085c-.374-.271-.82-.407-1.336-.407-.685 0-1.266.259-1.744.775-.477.517-.716 1.233-.716 2.15 0 .917.239 1.634.716 2.15.478.517 1.06.776 1.744.776.516 0 .962-.13 1.337-.388a1.86 1.86 0 00.774-1.104h2.615c-.232 1.085-.768 1.956-1.607 2.615-.84.659-1.873.988-3.1.988zm10.443 0c-.93 0-1.77-.213-2.519-.64a4.807 4.807 0 01-1.763-1.762c-.426-.762-.639-1.64-.639-2.635 0-.994.22-1.866.659-2.615a4.766 4.766 0 011.763-1.782c.749-.426 1.588-.64 2.518-.64.917 0 1.743.214 2.48.64a4.586 4.586 0 011.762 1.782c.44.75.659 1.621.659 2.615 0 .995-.22 1.873-.659 2.635a4.622 4.622 0 01-1.762 1.763c-.75.426-1.583.639-2.5.639zm0-2.15c.645 0 1.207-.24 1.685-.717.478-.49.717-1.214.717-2.17 0-.955-.24-1.672-.717-2.15-.478-.49-1.033-.736-1.666-.736-.659 0-1.227.245-1.705.736-.465.478-.697 1.195-.697 2.15 0 .956.232 1.68.697 2.17.478.478 1.04.717 1.686.717zm10.671 2.15c-.93 0-1.77-.213-2.518-.64a4.806 4.806 0 01-1.763-1.762c-.426-.762-.64-1.64-.64-2.635 0-.994.22-1.866.66-2.615a4.766 4.766 0 011.762-1.782c.75-.426 1.589-.64 2.519-.64.916 0 1.743.214 2.48.64a4.586 4.586 0 011.762 1.782c.439.75.659 1.621.659 2.615 0 .995-.22 1.873-.66 2.635a4.622 4.622 0 01-1.762 1.763c-.749.426-1.582.639-2.499.639zm0-2.15c.646 0 1.208-.24 1.685-.717.478-.49.717-1.214.717-2.17 0-.955-.239-1.672-.717-2.15-.477-.49-1.033-.736-1.666-.736-.658 0-1.226.245-1.704.736-.465.478-.697 1.195-.697 2.15 0 .956.232 1.68.697 2.17.478.478 1.04.717 1.685.717zm6.061 1.917V0h2.48v13.947h-2.48zm5.274-11.099c-.452 0-.827-.136-1.124-.407a1.36 1.36 0 01-.426-1.027c0-.413.142-.749.426-1.007C72.64.136 73.014 0 73.466 0c.452 0 .82.136 1.104.407.297.258.446.594.446 1.007 0 .413-.149.756-.446 1.027-.284.271-.652.407-1.104.407zm-1.24 11.1v-9.61h2.48v9.608h-2.48zm8.699.232c-.982 0-1.847-.213-2.596-.64a4.723 4.723 0 01-1.782-1.781c-.426-.762-.64-1.634-.64-2.616 0-.981.214-1.853.64-2.615a4.723 4.723 0 011.782-1.782c.75-.426 1.614-.64 2.596-.64 1.227 0 2.26.324 3.1.97.839.632 1.375 1.51 1.607 2.634h-2.615a1.855 1.855 0 00-.775-1.085c-.374-.271-.82-.407-1.337-.407-.684 0-1.265.259-1.743.775-.478.517-.717 1.233-.717 2.15 0 .917.24 1.634.717 2.15.478.517 1.06.776 1.743.776.517 0 .963-.13 1.337-.388a1.86 1.86 0 00.775-1.104h2.615c-.232 1.085-.768 1.956-1.608 2.615-.84.659-1.872.988-3.1.988zm10.442 0c-.93 0-1.77-.213-2.518-.64a4.807 4.807 0 01-1.763-1.762c-.426-.762-.64-1.64-.64-2.635 0-.994.22-1.866.66-2.615a4.766 4.766 0 011.762-1.782c.75-.426 1.589-.64 2.519-.64.916 0 1.743.214 2.48.64a4.585 4.585 0 011.762 1.782c.44.75.659 1.621.659 2.615 0 .995-.22 1.873-.659 2.635a4.622 4.622 0 01-1.763 1.763c-.749.426-1.582.639-2.499.639zm0-2.15c.646 0 1.208-.24 1.685-.717.478-.49.717-1.214.717-2.17 0-.955-.239-1.672-.717-2.15-.477-.49-1.033-.736-1.665-.736-.659 0-1.227.245-1.705.736-.465.478-.698 1.195-.698 2.15 0 .956.233 1.68.698 2.17.478.478 1.04.717 1.685.717zm6.061 1.917V4.34h2.19l.193 1.627a3.393 3.393 0 011.279-1.356c.568-.335 1.233-.503 1.995-.503 1.188 0 2.111.374 2.77 1.123.659.75.988 1.847.988 3.293v5.425h-2.48V8.755c0-.827-.167-1.46-.503-1.898-.336-.44-.859-.66-1.569-.66-.698 0-1.272.246-1.724.737-.44.49-.66 1.175-.66 2.053v4.96h-2.479zm14.681.233c-.852 0-1.601-.136-2.247-.407-.646-.284-1.162-.671-1.55-1.162a3.336 3.336 0 01-.697-1.705h2.499c.077.375.284.698.62.969.348.258.794.387 1.336.387.543 0 .937-.11 1.182-.33.258-.219.387-.47.387-.755 0-.413-.18-.69-.542-.833-.362-.154-.865-.303-1.511-.445-.413-.09-.833-.2-1.259-.33a6.456 6.456 0 01-1.182-.484 2.727 2.727 0 01-.852-.775c-.22-.322-.33-.716-.33-1.181 0-.853.336-1.57 1.008-2.15.684-.582 1.64-.872 2.867-.872 1.136 0 2.04.265 2.712.794.684.53 1.091 1.26 1.22 2.189h-2.344c-.142-.71-.678-1.065-1.608-1.065-.464 0-.826.09-1.084.27-.246.182-.368.408-.368.679 0 .284.187.51.561.678.375.168.872.323 1.492.465.671.155 1.285.329 1.84.523.568.18 1.02.458 1.356.833.336.361.504.884.504 1.569a2.696 2.696 0 01-.465 1.608c-.323.477-.788.852-1.395 1.123s-1.323.407-2.15.407z"
                                         fill="#fff" />
@@ -136,18 +136,18 @@
             </div>
         </div>
         <div class="p-6 md:p-0">
-            <h2 class="mt-10 mb-8 text-2xl font-extrabold tracking-tight text-dark-900">Get involved</h2>
+            <h2 class="mt-10 mb-8 text-2xl font-extrabold tracking-tight text-gray-900">Get involved</h2>
             <ul class="grid gap-6 sm:grid-cols-2 xl:gap-8">
                 <li><a href="https://github.com/tailwindlabs/tailwindcss/discussions"
                         class="flex items-start space-x-4"><svg fill="currentColor"
-                            class="flex-none w-12 h-12 text-dark-600">
+                            class="flex-none w-12 h-12 text-gray-600">
                             <rect width="48" height="48" rx="12"></rect>
                             <path
                                 d="M23.997 12a12 12 0 00-3.792 23.388c.6.12.816-.264.816-.576l-.012-2.04c-3.336.72-4.044-1.608-4.044-1.608-.552-1.392-1.332-1.764-1.332-1.764-1.08-.744.084-.72.084-.72 1.2.084 1.836 1.236 1.836 1.236 1.08 1.824 2.808 1.296 3.492.996.12-.78.42-1.308.756-1.608-2.664-.3-5.46-1.332-5.46-5.928 0-1.32.468-2.388 1.236-3.228a4.32 4.32 0 01.12-3.168s1.008-.324 3.3 1.224a11.496 11.496 0 016 0c2.292-1.56 3.3-1.224 3.3-1.224.66 1.644.24 2.88.12 3.168.768.84 1.236 1.92 1.236 3.228 0 4.608-2.808 5.616-5.484 5.916.432.372.816 1.104.816 2.22l-.012 3.3c0 .312.216.696.828.576A12 12 0 0023.997 12z"
-                                fill="currentColor" class="text-dark-50"></path>
+                                fill="currentColor" class="text-gray-50"></path>
                         </svg>
                         <div class="flex-auto">
-                            <h3 class="font-bold text-dark-900 dark:text-dark-300">GitHub Discussions</h3>
+                            <h3 class="font-bold text-gray-900 dark:text-gray-300">GitHub Discussions</h3>
                             <p>Connect with members of the Tailwind CSS community.</p>
                         </div>
                     </a></li>
@@ -162,7 +162,7 @@
                                 fill="currentColor" class="text-indigo-50"></path>
                         </svg>
                         <div class="flex-auto">
-                            <h3 class="font-bold text-dark-900 dark:text-dark-300">Discord</h3>
+                            <h3 class="font-bold text-gray-900 dark:text-gray-300">Discord</h3>
                             <p>Join our Discord group to chat with other Tailwind users.</p>
                         </div>
                     </a></li>
@@ -174,7 +174,7 @@
                                 fill="currentColor" class="text-blue-50"></path>
                         </svg>
                         <div class="flex-auto">
-                            <h3 class="font-bold text-dark-900 dark:text-dark-300">Twitter</h3>
+                            <h3 class="font-bold text-gray-900 dark:text-gray-300">Twitter</h3>
                             <p>Follow the Tailwind Twitter account for news and updates.</p>
                         </div>
                     </a></li>
@@ -186,7 +186,7 @@
                                 fill="currentColor" class="text-red-50"></path>
                         </svg>
                         <div class="flex-auto">
-                            <h3 class="font-bold text-dark-900 dark:text-dark-300">YouTube</h3>
+                            <h3 class="font-bold text-gray-900 dark:text-gray-300">YouTube</h3>
                             <p>Watch screencasts and feature tutorials of Tailwind.</p>
                         </div>
                     </a></li>

@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="container grid p-4 mx-auto lg:p-12 md:p-6">
-        <h2 class="my-6 text-2xl font-semibold text-dark-700 dark:text-dark-200">
+        <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
             Dashboard
         </h2>
 
@@ -54,16 +54,16 @@
 
         </div>
         <!-- Charts -->
-        <h2 class="my-6 text-2xl font-semibold text-dark-700 dark:text-dark-200">
+        <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
             Charts
         </h2>
         <div class="grid gap-6 mb-8 md:grid-cols-2">
-            <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-dark-800">
-                <h4 class="mb-4 font-semibold text-dark-800 dark:text-dark-300">
+            <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
                     Revenue
                 </h4>
                 <canvas id="pie"></canvas>
-                <div class="flex justify-center mt-4 space-x-3 text-sm text-dark-600 dark:text-dark-300">
+                <div class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-300">
                     <!-- Chart legend -->
                     <div class="flex items-center">
                         <span class="inline-block w-3 h-3 mr-1 bg-blue-500 rounded-full"></span>
@@ -79,12 +79,12 @@
                     </div>
                 </div>
             </div>
-            <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-dark-800">
-                <h4 class="mb-4 font-semibold text-dark-800 dark:text-dark-300">
+            <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
                     Traffic
                 </h4>
                 <canvas id="line"></canvas>
-                <div class="flex justify-center mt-4 space-x-3 text-sm text-dark-600 dark:text-dark-300">
+                <div class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-300">
                     <!-- Chart legend -->
                     <div class="flex items-center">
                         <span class="inline-block w-3 h-3 mr-1 bg-green-600 rounded-full"></span>
@@ -99,19 +99,19 @@
         </div>
         <!-- New Table -->
         <div class="w-full overflow-hidden ">
-            <div class="overflow-x-auto bg-white rounded-md shadow dark:bg-dark-800">
+            <div class="overflow-x-auto bg-white rounded-md shadow dark:bg-gray-800">
                 <table class="w-full whitespace-no-wrap">
                     <thead>
                         <tr
-                            class="font-bold tracking-wide text-left uppercase border-b text-md text-dark-500 dark:border-dark-700 dark:text-dark-300">
+                            class="font-bold tracking-wide text-left text-gray-500 uppercase border-b text-md dark:border-gray-700 dark:text-gray-300">
                             <th class="px-6 pt-6 pb-4">Client</th>
                             <th class="px-6 pt-6 pb-4">Amount</th>
                             <th class="px-6 pt-6 pb-4">Status</th>
                             <th class="px-6 pt-6 pb-4">Date</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y dark:divide-dark-700 ">
-                        <tr class="text-dark-700 dark:text-dark-300">
+                    <tbody class="divide-y dark:divide-gray-700 ">
+                        <tr class="text-gray-700 dark:text-gray-300">
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm">
                                     <!-- Avatar with inset shadow -->
@@ -124,7 +124,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold">Hans Burger</p>
-                                        <p class="text-xs text-dark-600 dark:text-dark-300">
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
                                             10x Developer
                                         </p>
                                     </div>
@@ -144,7 +144,7 @@
                             </td>
                         </tr>
 
-                        <tr class="text-dark-700 dark:text-dark-300">
+                        <tr class="text-gray-700 dark:text-gray-300">
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm">
                                     <!-- Avatar with inset shadow -->
@@ -157,7 +157,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold">Jolina Angelie</p>
-                                        <p class="text-xs text-dark-600 dark:text-dark-300">
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
                                             Unemployed
                                         </p>
                                     </div>
@@ -177,7 +177,7 @@
                             </td>
                         </tr>
 
-                        <tr class="text-dark-700 dark:text-dark-300">
+                        <tr class="text-gray-700 dark:text-gray-300">
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm">
                                     <!-- Avatar with inset shadow -->
@@ -190,7 +190,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold">Sarah Curry</p>
-                                        <p class="text-xs text-dark-600 dark:text-dark-300">
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
                                             Designer
                                         </p>
                                     </div>
@@ -210,7 +210,7 @@
                             </td>
                         </tr>
 
-                        <tr class="text-dark-700 dark:text-dark-300">
+                        <tr class="text-gray-700 dark:text-gray-300">
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm">
                                     <!-- Avatar with inset shadow -->
@@ -223,7 +223,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold">Rulia Joberts</p>
-                                        <p class="text-xs text-dark-600 dark:text-dark-300">
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
                                             Actress
                                         </p>
                                     </div>
@@ -243,7 +243,7 @@
                             </td>
                         </tr>
 
-                        <tr class="text-dark-700 dark:text-dark-300">
+                        <tr class="text-gray-700 dark:text-gray-300">
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm">
                                     <!-- Avatar with inset shadow -->
@@ -256,7 +256,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold">Wenzel Dashington</p>
-                                        <p class="text-xs text-dark-600 dark:text-dark-300">
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
                                             Actor
                                         </p>
                                     </div>
@@ -267,7 +267,7 @@
                             </td>
                             <td class="px-4 py-3 text-xs">
                                 <span
-                                    class="px-2 py-1 font-semibold leading-tight rounded-full text-dark-700 bg-dark-100 dark:text-dark-100 dark:bg-dark-700">
+                                    class="px-2 py-1 font-semibold leading-tight text-gray-700 bg-gray-100 rounded-full dark:text-gray-100 dark:bg-gray-700">
                                     Expired
                                 </span>
                             </td>
@@ -276,7 +276,7 @@
                             </td>
                         </tr>
 
-                        <tr class="text-dark-700 dark:text-dark-300">
+                        <tr class="text-gray-700 dark:text-gray-300">
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm">
                                     <!-- Avatar with inset shadow -->
@@ -289,7 +289,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold">Dave Li</p>
-                                        <p class="text-xs text-dark-600 dark:text-dark-300">
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
                                             Influencer
                                         </p>
                                     </div>
@@ -309,7 +309,7 @@
                             </td>
                         </tr>
 
-                        <tr class="text-dark-700 dark:text-dark-300">
+                        <tr class="text-gray-700 dark:text-gray-300">
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm">
                                     <!-- Avatar with inset shadow -->
@@ -322,7 +322,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold">Maria Ramovic</p>
-                                        <p class="text-xs text-dark-600 dark:text-dark-300">
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
                                             Runner
                                         </p>
                                     </div>
@@ -342,7 +342,7 @@
                             </td>
                         </tr>
 
-                        <tr class="text-dark-700 dark:text-dark-300">
+                        <tr class="text-gray-700 dark:text-gray-300">
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm">
                                     <!-- Avatar with inset shadow -->
@@ -355,7 +355,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold">Hitney Wouston</p>
-                                        <p class="text-xs text-dark-600 dark:text-dark-300">
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
                                             Singer
                                         </p>
                                     </div>
@@ -375,7 +375,7 @@
                             </td>
                         </tr>
 
-                        <tr class="text-dark-700 dark:text-dark-300">
+                        <tr class="text-gray-700 dark:text-gray-300">
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm">
                                     <!-- Avatar with inset shadow -->
@@ -388,7 +388,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold">Hans Burger</p>
-                                        <p class="text-xs text-dark-600 dark:text-dark-300">
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
                                             10x Developer
                                         </p>
                                     </div>
@@ -411,7 +411,7 @@
                 </table>
             </div>
             <div
-                class="grid px-4 py-3 text-xs font-semibold tracking-wide uppercase border-t text-dark-500 dark:border-dark-700 sm:grid-cols-9 dark:text-dark-300 ">
+                class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 sm:grid-cols-9 dark:text-gray-300 ">
                 <span class="flex items-center col-span-3">
                     Showing 21-30 of 100
                 </span>

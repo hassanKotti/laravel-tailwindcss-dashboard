@@ -5,7 +5,7 @@
                 <a href="{{ route('organizations') }}" class="text-purple-400 hover:text-purple-600">Organizations</a>
                 <span class="font-medium text-purple-400">/</span> Edit
             </h1>
-            <div class="max-w-full overflow-hidden bg-white rounded-md shadow dark:bg-dark-800">
+            <div class="max-w-full overflow-hidden bg-white rounded-md shadow dark:bg-gray-800">
                 <form action="{{ route('organizations.update', $organization) }}" method="POST">
                     @csrf
                     @method('PUT')
@@ -51,7 +51,7 @@
                         <div class="w-full pb-8 pr-6 lg:w-1/2">
                             <x-label for="country" :value="__('Country')" />
                             <select id="country_id" name="country_id"
-                                class="block w-full mt-1 rounded-md shadow-sm appearance-none dark:bg-dark-600 dark:border-dark-500 border-dark-300 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50'">
+                                class="block w-full mt-1 border-gray-300 rounded-md shadow-sm appearance-none dark:bg-gray-600 dark:border-gray-500 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50'">
                                 <option value=""></option>
                                 @foreach ($countries as $country)
                                     <option value="{{ $country->id }}"
@@ -68,9 +68,9 @@
                                 autocomplete="current-posta l_code" value="{{ $organization->postal_code }}" />
                         </div>
                     </div>
-                    <div class="flex items-center justify-end px-8 py-4 space-x-2 border-t bg-dark-50 dark:bg-dark-800 dark:border-dark-700 border-dark-100"
+                    <div class="flex items-center justify-end px-8 py-4 space-x-2 border-t border-gray-100 bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
                         x-data="{ open:false}">
-                        <a class="flex items-center px-3 py-2 text-red-500 rounded-md cursor-pointer bg-dark-200 hover:bg-red-100"
+                        <a class="flex items-center px-3 py-2 text-red-500 bg-gray-200 rounded-md cursor-pointer hover:bg-red-100"
                             @click="open=true" onclick="event.preventDefault();">
                             <svg class="w-6 h-6 text-red-500 " viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">

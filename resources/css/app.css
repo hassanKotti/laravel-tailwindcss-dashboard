@@ -25,46 +25,38 @@
     .page-item.disabled .page-link {
         @apply text-gray-300 bg-white border-gray-200;
     }
-    /*
-    / width /
-    ::-webkit-scrollbar {
-        width: 16px;
-        height: 16px;
+    pre[class*="language-"] {
+        --bg-opacity: 1;
+        background-color: #2d3748;
+        background-color: rgba(45, 55, 72, var(--bg-opacity));
+        position: static;
     }
 
-    / Track /
-    ::-webkit-scrollbar-track {
-        border-radius: 100vh;
-        background: #edf2f7;
+    pre[class*="language-"] {
+        overflow: auto;
+        position: relative;
+        margin: 0.5em 0;
+        padding: 1.25em 1em;
     }
 
-    / Handle /
-    ::-webkit-scrollbar-thumb {
-        background: #cbd5e0;
-        border-radius: 100vh;
-        border: 4px solid #edf2f7;
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        color: #c3cee3;
+        background: #263238;
+        font-family: Roboto Mono, monospace;
+        font-size: 1em;
+        line-height: 1.5em;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
     }
-
-    / Handle on hover /
-    ::-webkit-scrollbar-thumb:hover {
-        background: #a0aec0;
-    }
-
-    /* Track on dark mode /
-    .dark ::-webkit-scrollbar-track {
-        border-radius: 100vh;
-        background: #1c2029;
-    }
-    /* Handle on dark mode /
-    .dark ::-webkit-scrollbar-thumb {
-        background: #212632;
-        border-radius: 100vh;
-        border: 4px solid #1c2029;
-    }
-
-    /* Handle on hover on dark mode /
-    .dark ::-webkit-scrollbar-thumb:hover {
-        background: #12151b;
-    }*/
     /* purgecss end ignore */
 }
